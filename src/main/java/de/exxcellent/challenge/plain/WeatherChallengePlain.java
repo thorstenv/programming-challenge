@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Thorsten Vobl {@literal <thorsten.vobl@infoscreen.de>}
+ * @author Thorsten Vobl {@literal <thorsten.vobl@googlemail.com>}
  * 04.02.2019
  *
  */

@@ -5,7 +5,7 @@ import de.exxcellent.challenge.elaborate.exceptions.FileTypeNotYetSupportedExcep
 
 /**
  *
- * @author Thorsten Vobl {@literal <thorsten.vobl@infoscreen.de>} 04.02.2019
+ * @author Thorsten Vobl {@literal <thorsten.vobl@googlemail.com>} 04.02.2019
  *
  */
 public class ReaderFactory {

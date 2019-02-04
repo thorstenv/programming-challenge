@@ -4,12 +4,12 @@ package de.exxcellent.challenge.elaborate.defines;
 
 /**
  *
- * @author Thorsten Vobl {@literal <thorsten.vobl@infoscreen.de>}
+ * @author Thorsten Vobl {@literal <thorsten.vobl@googlemail.com>}
  */
 public interface Defines {
     
     // file types
-    String CSV = "csv";
+    public static final String CSV = "csv";
     
     String CSV_DELIMITER = ",";
     

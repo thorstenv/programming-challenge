@@ -2,7 +2,7 @@ package de.exxcellent.challenge.elaborate.exceptions;
 
 /**
  *
- * @author Thorsten Vobl {@literal <thorsten.vobl@infoscreen.de>}
+ * @author Thorsten Vobl {@literal <thorsten.vobl@googlemail.com>}
  * 04.02.2019
  *
  */

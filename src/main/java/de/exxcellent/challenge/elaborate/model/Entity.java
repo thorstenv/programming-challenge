@@ -1,11 +1,12 @@
 package de.exxcellent.challenge.elaborate.model;
 
 import de.exxcellent.challenge.elaborate.exceptions.HeaderDataLengthException;
+import de.exxcellent.challenge.elaborate.exceptions.NoMatchingDataFoundException;
 import java.util.HashMap;
 
 /**
  *
- * @author Thorsten Vobl {@literal <thorsten.vobl@infoscreen.de>}
+ * @author Thorsten Vobl {@literal <thorsten.vobl@googlemail.com>}
  * 04.02.2019
  *
  */
@@ -22,5 +23,12 @@ public class Entity {
             this.entries.put(keys[i], values[i]);
         }
     }
-
+    
+    public String getValue( String key ) throws NoMatchingDataFoundException {
+        if( entries.containsKey(key)) {
+            return entries.get(key);
+        } else {
+            throw new NoMatchingDataFoundException("No data found for key " + key);
+        }
+    }
 }
