@@ -11,8 +11,7 @@ import de.exxcellent.challenge.elaborate.exceptions.FileTypeNotYetSupportedExcep
 public class ReaderFactory {
 
     public IReader getReaderForFileType(String filename) throws FileTypeNotYetSupportedException {
-        String fileEnding = filename.substring(filename.lastIndexOf("."), filename.length() - 1);
-
+        String fileEnding = FilenameUtils.getFileEnding(filename);
         switch (fileEnding) {
             case CSV: {
                 return new CsvReader();
