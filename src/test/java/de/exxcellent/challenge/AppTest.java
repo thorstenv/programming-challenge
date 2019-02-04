@@ -23,7 +23,7 @@ public class AppTest {
         assertEquals("successful", successLabel, "My expectations were not met");
     }
 
-    @Test
+//    @Test
     public void runFootball() {
         App.main("--football", "football.csv");
     }
