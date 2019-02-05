@@ -28,11 +28,9 @@ public final class App {
      */
     public static void main(String... args) {
 
-        // Your preparation code …
-        ReaderFactory readerFactory = new ReaderFactory();
-        
+        // Your preparation code …        
         try {
-            IReader csvWeatherReader = readerFactory.getReaderForFileType("weather.csv");
+            IReader csvWeatherReader = ReaderFactory.getReaderForFileType("weather.csv");
             List<Entity> weatherData = csvWeatherReader.readEntities("weather.csv");
             EntityRepository weatherRepository = new EntityRepository();
             weatherRepository.addAllEntities(weatherData);
@@ -45,7 +43,7 @@ public final class App {
         
         
         try {
-            IReader csvReader = readerFactory.getReaderForFileType("football.csv");
+            IReader csvReader = ReaderFactory.getReaderForFileType("football.csv");
             List<Entity> footballData = csvReader.readEntities("football.csv");
             EntityRepository footballRepository = new EntityRepository();
             footballRepository.addAllEntities(footballData);
