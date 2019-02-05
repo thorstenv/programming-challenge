@@ -11,10 +11,8 @@ import org.junit.jupiter.api.Test;
 public class ReaderFactoryTest {
     
     @Test
-    public void CsvReaderTest() throws FileTypeNotYetSupportedException {
-        ReaderFactory factory = new ReaderFactory();
-        
-        IReader csvReader = factory.getReaderForFileType("test.csv");
+    public void CsvReaderTest() throws FileTypeNotYetSupportedException {                
+        IReader csvReader = ReaderFactory.getReaderForFileType("test.csv");
         assertEquals(csvReader.getClass(), CsvReader.class);
     }
 }
